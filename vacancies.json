@@ -1,24 +1,24 @@
 [
   {
-    "title": "Middle Python backend developer",
-    "link": "https://spb.hh.ru/vacancy/75951031?from=vacancy_search_list&query=python",
-    "salary": "90 000 – 180 000 руб.",
-    "employer": "Федеральное автономное учреждение Государственный Научно-Исследовательский Институт Авиационных Систем",
+    "title": "Middle Python-разработчик",
+    "link": "https://spb.hh.ru/vacancy/75679088?from=vacancy_search_list&query=python",
+    "salary": "140 000 – 250 000 руб.",
+    "employer": "AERODISK",
     "city": "Москва"
   },
   {
-    "title": "Python разработчик",
-    "link": "https://spb.hh.ru/vacancy/75647450?from=vacancy_search_list&query=python",
-    "salary": "100 000 – 130 000 руб.",
-    "employer": "ВАВТ МИНЭКОНОМРАЗВИТИЯ РОССИИ",
+    "title": "Middle разработчик Python / Django",
+    "link": "https://spb.hh.ru/vacancy/76405603?from=vacancy_search_list&query=python",
+    "salary": "60 000 – 140 000 руб.",
+    "employer": "ООО РА Дельта",
     "city": "Москва"
   },
   {
-    "title": "Fullstack программист Python/JS (удалённо)",
-    "link": "https://spb.hh.ru/vacancy/76443962?from=vacancy_search_list&query=python",
-    "salary": "120 000 – 160 000 руб.",
-    "employer": "ООО Телеком и Микроэлектроник Индастриз",
-    "city": "Санкт-Петербург"
+    "title": "ML Engineer",
+    "link": "https://spb.hh.ru/vacancy/75959978?from=vacancy_search_list&query=python",
+    "salary": "от 180 000 руб.",
+    "employer": "ООО Эрливидео",
+    "city": "Москва"
   },
   {
     "title": "Fullstack программист Python/JS (удалённо)",
@@ -35,13 +35,6 @@
     "city": "Москва"
   },
   {
-    "title": "Ментор (лектор) курса по Python-разработке",
-    "link": "https://spb.hh.ru/vacancy/76540298?from=vacancy_search_list&query=python",
-    "salary": "30 000 – 50 000 руб.",
-    "employer": "Skyeng",
-    "city": "Москва"
-  },
-  {
     "title": "Python Developer",
     "link": "https://spb.hh.ru/vacancy/76482137?from=vacancy_search_list&query=python",
     "salary": "Зарплата не указана",
@@ -49,10 +42,24 @@
     "city": "Москва"
   },
   {
+    "title": "Middle BackEnd разработчик (Python)",
+    "link": "https://spb.hh.ru/vacancy/76445416?from=vacancy_search_list&query=python",
+    "salary": "Зарплата не указана",
+    "employer": "ООО Верме",
+    "city": "Москва"
+  },
+  {
     "title": "Разработчик Python",
     "link": "https://spb.hh.ru/vacancy/73581049?from=vacancy_search_list&query=python",
     "salary": "Зарплата не указана",
     "employer": "Группа компаний Астра",
+    "city": "Москва"
+  },
+  {
+    "title": "Python-разработчик в инфраструктурную группу",
+    "link": "https://spb.hh.ru/vacancy/76417694?from=vacancy_search_list&query=python",
+    "salary": "Зарплата не указана",
+    "employer": "Rambler&Co",
     "city": "Москва"
   },
   {

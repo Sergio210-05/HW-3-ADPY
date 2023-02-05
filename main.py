@@ -44,7 +44,7 @@ def searching_keywords(vacancy, *args):
     return key_word_in
 
 
-def vacancy_info(vacancies_list, list_info, *key_words):
+def vacancy_info(vacancies_list, list_info, *key_words, usd=False):
     for vacancy in vacancies_list:
         description = vacancy.find("div", class_="g-user-content")
 
@@ -70,6 +70,8 @@ def vacancy_info(vacancies_list, list_info, *key_words):
                 salary = vacancy_tag_span.text
             else:
                 salary = "Зарплата не указана"
+            if usd and "usd" not in salary.lower():
+                continue
 
             about_vacancy = {
                 "title": title,
@@ -82,7 +84,7 @@ def vacancy_info(vacancies_list, list_info, *key_words):
     return list_info
 
 
-def iterate_pages(url, *key_words, num_pages=None):
+def iterate_pages(url, *key_words, num_pages=None, usd=False):
     vacancies = []
     if num_pages is None:
         num_pages = pages_quantity(url=url)
@@ -90,24 +92,20 @@ def iterate_pages(url, *key_words, num_pages=None):
         url_page = url + f'&page={page}'
         html = get_page(url=url_page)
         vacancies_list = get_vacancies(html=html)
-        vacancies = vacancy_info(vacancies_list, vacancies, *key_words)
+        vacancies = vacancy_info(vacancies_list, vacancies, *key_words, usd=usd)
     return vacancies
 
 
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?text=python&area=1&area=2'
-    # html = get_page(url=url)
-    # num_pages = pages_quantity(url=url)
-    # vacancies = []
     key_words = "django", "flask"
-    # for page in range(10):
-    #     url_page = url + f'&page={page}'
-    #     html = get_page(url=url_page)
-    #     vacancies_list = get_vacancies(html=html)
-    #     vacancies = vacancy_info(vacancies_list, vacancies, "django", "flask")
     vacancies = iterate_pages(url, *key_words, num_pages=10)
-
     with open('vacancies.json', 'wt', encoding='utf-8') as file:
-        # file.writelines(vacancies.json())
         json.dump(vacancies, file, indent=2, ensure_ascii=False)
     pprint(vacancies)
+
+    # Salary in USD
+    key_words = "python"
+    vacancies_usd = iterate_pages(url, *key_words, usd=True)
+    with open('vacancies_usd.json', 'wt', encoding='utf-8') as file:
+        json.dump(vacancies_usd, file, indent=2, ensure_ascii=False)
